@@ -1,0 +1,61 @@
+.table th, .table td {
+    text-align: center; /* Căn giữa theo chiều ngang */
+    vertical-align: middle; /* Căn giữa theo chiều dọc */
+    padding: 15px; /* Thêm khoảng cách bên trong */
+}
+
+thead th {
+    text-align: center; /* Căn giữa các tiêu đề cột */
+}
+
+tbody td {
+    text-align: center; /* Căn giữa nội dung cột */
+}
+
+.cart-product-image {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn-decrement, .btn-increment {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-decrement:hover, .btn-increment:hover {
+    background-color: #e2e6ea;
+}
+
+.btn-decrement:active, .btn-increment:active {
+    background-color: #d6d8db;
+}
+.modal-body .table td img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

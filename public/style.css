@@ -1,0 +1,41 @@
+/* Style the buttons */
+.btnStyle {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adjust spacing for buttons */
+.col-md-4 .btnStyle {
+    margin-left: 5px;
+}
+
+/* Margin adjustment to align rows */
+.gallery-row {
+    margin-bottom: 10px;
+}
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875em;
+}/* CSS Tùy Chỉnh cho Checkbox */
+.form-check-input {
+    margin-right: 10px; /* Tạo khoảng cách giữa checkbox và nhãn */
+    cursor: pointer; /* Thay đổi con trỏ khi di chuột qua checkbox */
+}
+
+.form-check-label {
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: 500; /* Độ đậm của chữ */
+}
+
+
