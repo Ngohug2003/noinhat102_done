@@ -59,7 +59,8 @@ Route::prefix('/')->group(function () {
 
     // tin tức 
     Route::get('/trang-tin-tuc', [ClientPostController::class, 'index'])->name('trang-tin-tuc');
-    Route::get('/trang-chi-tiet-tin/{id}', [ClientPostController::class, 'show'])->name('Client.postShow');
+    Route::get('/trang-chi-tiet-tin/{slug}', [ClientPostController::class, 'show'])->name('Client.postShow');
+
 
 });
 

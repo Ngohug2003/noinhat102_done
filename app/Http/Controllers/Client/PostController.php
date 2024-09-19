@@ -13,7 +13,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::query()->select('id', 'name', 'image')
+        $posts = Post::query()->select('id','name','image','status','slug')
         ->take(6)
         ->get();
     return view('pages.Client.trang-tin-tuc', compact('posts'));
@@ -38,10 +38,15 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($id)
+    public function show($slug)
     {
-        $post = Post::findOrFail($id);
+        // Tìm bài viết theo slug
+        $post = Post::where('slug', $slug)->firstOrFail();
+        
+        // Tăng số lượt xem
         $post->increment('views');
+        
+        // Trả về view với bài viết
         return view('pages.Client.trang-chi-tiet-tin', compact('post'));
     }
 
